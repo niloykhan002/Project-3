@@ -26,8 +26,10 @@
                         'dark-2': 'rgb(73, 73, 73)',
                         'dark-3': 'rgb(115, 115, 115)',
                         'footer-bg': 'rgb(28, 28, 28)',
-                        'secondary-white': 'rgb(233, 233, 233)'
-
+                        'secondary-white': 'rgb(233, 233, 233)',
+                    },
+                    backgroundImage: {
+                        'section-texture': "url('./assets/bg.jpg')",
                     }
                 }
             }
@@ -198,7 +200,7 @@
             </div>
         </section>
         <!-- Work Process Section -->
-        <section class="container mx-auto">
+        <section class="container mx-auto pb-12 lg:pb-28">
             <div class="flex flex-col items-center">
                 <div class="flex gap-1 bg-white rounded-3xl w-fit py-2 px-4 mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -262,7 +264,8 @@
             </div>
             <div>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-                    <div class="flex flex-col lg:flex-row p-6 border border-secondary-white gap-6 rounded-xl lg:col-span-2">
+                    <div
+                        class="flex flex-col lg:flex-row p-6 border border-secondary-white gap-6 rounded-xl lg:col-span-2">
                         <div>
                             <img class="w-full h-full" src="./assets/img1.png" alt="">
                         </div>
@@ -298,7 +301,8 @@
                     <div class="p-6 border border-secondary-white rounded-xl order-2 lg:order-1">
                         <img class="w-full" src="./assets/img3.png" alt="">
                     </div>
-                    <div class="flex flex-col lg:flex-row order-1 lg:order-2 p-6 border border-secondary-white gap-6 rounded-xl lg:col-span-2">
+                    <div
+                        class="flex flex-col lg:flex-row order-1 lg:order-2 p-6 border border-secondary-white gap-6 rounded-xl lg:col-span-2">
                         <div class="flex-1">
                             <img class="w-full h-full" src="./assets/img4.png" alt="">
                         </div>
@@ -325,6 +329,58 @@
                     </div>
                     <div class="p-6 border border-secondary-white rounded-xl order-3">
                         <img class="w-full" src="./assets/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Input section -->
+        <section class="bg-section-texture bg-no-repeat bg-cover py-12 lg:py-28 border-8 border-white">
+            <div class="container mx-auto">
+                <div class="flex flex-col items-center">
+                    <div class="flex gap-1 bg-secondary rounded-3xl w-fit py-2 px-4 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                        <p class="text-base text-dark-2 font-bold">Let’s Connect</p>
+                    </div>
+                    <h1 class="text-3xl lg:text-5xl font-bold text-dark-1 text-center">Let’s Discuss Next Project</h1>
+                    <p class="text-base font-medium text-dark-2 py-6 text-center">The barn house captivates with its
+                        blend
+                        of rustic charm and modern sophistication, <br> featuring weathered
+                        wood, sleek metal accents.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-6 gap-6">
+                    <div>
+                        <input type="text" placeholder="First Name*"
+                            class="input rounded-3xl w-full" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Last Name*"
+                            class="input rounded-3xl w-full" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Phone Number*"
+                            class="input rounded-3xl w-full" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email Number*"
+                            class="input rounded-3xl w-full" />
+                    </div>
+                    <div class="lg:col-span-2 row-span-3">
+                        <textarea class="textarea rounded-2xl w-full h-full" placeholder="Write your message here"></textarea>
+                    </div>
+                    <div class="btn inline-flex bg-primary rounded-3xl lg:col-span-2">
+                        <a class="text-xl font-extrabold text-footer-bg">Send Mail</a>
+                        <div class="w-8 bg-footer-bg p-2 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
